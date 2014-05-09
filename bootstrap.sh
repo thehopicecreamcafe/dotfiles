@@ -13,9 +13,7 @@ mkdir -p $olddir
 echo "...done"
 
 # backup existing dotfiles and symlink new ones
-COUNTER=0
 for file in $files; do
-  echo $((++COUNTER))
   if [ -f ~/.$file ]; then
     echo "Moving ~/.$file to $olddir"
     mv ~/.$file $olddir/
