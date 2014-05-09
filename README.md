@@ -3,9 +3,9 @@ Installation
 
 Clone the repo:
 
-  git clone https://github.com/ryanbarringtoncox/dotfiles
+     git clone https://github.com/ryanbarringtoncox/dotfiles
 
 Run bootstrap script:
 
-  cd dotfiles
-  ./bootstrap.sh
+     cd dotfiles
+    ./bootstrap.sh
