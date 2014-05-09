@@ -1,6 +1,6 @@
 syntax on
 
-"set t_Co=256
+set t_Co=256
 
 set expandtab
 set tabstop=2
@@ -20,14 +20,12 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
-" let Vundle manage Vundle
-"  " required! 
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
+let g:NERDTreeDirArrows=0
 
 filetype plugin indent on
-set mouse=a
+
+set background=dark
+
+colorscheme desert
+
