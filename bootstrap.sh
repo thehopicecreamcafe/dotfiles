@@ -26,4 +26,5 @@ for file in $files; do
   ln -s $dir/$file ~/.$file
 done
 
-source ~/.bashrc
+echo "Now please type 'source ~/.bashrc' to get everything loaded..."
+echo "  ...yep it's a hack, but you won't need to do this next time you login."
