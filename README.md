@@ -9,3 +9,4 @@ Run bootstrap script:
 
      cd dotfiles
     ./bootstrap.sh
+    source ~/.bashrc
