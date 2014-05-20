@@ -8,6 +8,9 @@ fi
 # set terminal in vi mode
 set -o vi
 
+# increase bash history
+HISTFILESIZE=10000
+
 # for copying and pasting using putty
 vimrcoff() {
   mv ~/.vimrc ~/.vimrc.bak
