@@ -25,7 +25,7 @@ for file in ~/dotfiles/custom/*; do
   if (echo $file | grep -i README)
     then echo "Found readme file";
   elif (echo $file | grep -i .gititnore) 
-    then echo "Found gititnore file";
+    then echo "Found gitignore file";
   else
     echo "sourcing $file"
     . $file
