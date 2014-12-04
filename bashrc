@@ -1,4 +1,4 @@
-# .bashrc
+custom_dir="$HOME/dotfiles/custom"
 
 # source global definitions
 if [ -f /etc/bashrc ]; then
@@ -11,19 +11,10 @@ set -o vi
 # increase bash history
 HISTFILESIZE=10000
 
-# for copying and pasting using putty
-vimrcoff() {
-  mv ~/.vimrc ~/.vimrc.bak
-}
-
-vimrcon() {
-  mv  ~/.vimrc.bak ~/.vimrc
-}
-
 # source custom configs
-for file in ~/dotfiles/custom/*; do
+for file in $custom_dir/*; do
   if (echo $file | grep -i README)
-    then echo "Found readme file";
+    then : #does nothing
   elif (echo $file | grep -i .gititnore) 
     then echo "Found gitignore file";
   else
