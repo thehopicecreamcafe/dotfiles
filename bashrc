@@ -1,3 +1,4 @@
+# dir for custom aliases, functions, etc
 custom_dir="$HOME/dotfiles/custom"
 
 # source global definitions
