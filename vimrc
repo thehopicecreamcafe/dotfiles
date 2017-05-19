@@ -38,3 +38,5 @@ filetype plugin indent on
 set background=dark
 colorscheme desert
 
+execute pathogen#infect()
+
