@@ -38,5 +38,6 @@ filetype plugin indent on
 set background=dark
 colorscheme desert
 
+" remove following line when pasting into severs at work
 execute pathogen#infect()
 
