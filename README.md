@@ -10,10 +10,12 @@ yum install vim
 alias vi='vim' # add this to bashrc
 ```
 
-Vundle would not work until I ran this command. W/o it, git was adding ^M when cloning and it broke everything.
+Vundle would not work until I ran the `git config` command below. W/o it, git was adding ^M when cloning and it broke everything.
 
 ```
 git config --global core.autocrlf input
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 ```
 
 Once that's set up, just copy the contents of .vimrc here, launch vim and run `:PluginInstall` in vim.  Should install everything.  Close and reopen vimrc and all should be well.
