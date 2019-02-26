@@ -18,6 +18,12 @@ git config --global core.autocrlf input
 
 Once that's set up, just copy the contents of .vimrc here, launch vim and run `:PluginInstall` in vim.  Should install everything.  Close and reopen vimrc and all should be well.
 
+You may need this too, to keep git editor happy.
+
+```
+git config --global core.editor /usr/bin/vim
+```
+
 PS Don't forget ag.
 
 ```
