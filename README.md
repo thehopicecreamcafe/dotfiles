@@ -7,7 +7,15 @@ You may need to install vim and alias vi to vim.  i.e. had to do this on CentOS7
 
 ```
 yum install vim
-alias vi='vim' # add this to bashrc
+```
+
+And add these lines to .bashrc
+
+```
+# add to bashrc
+alias vi='vim'
+set -o vi # vi key bindings in terminal
+export TERM=screen-256color # ensures colors/themes in vim
 ```
 
 Vundle would not work until I ran the `git config` command below. W/o it, git was adding ^M when cloning and it broke everything.
