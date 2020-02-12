@@ -16,6 +16,7 @@ And add these lines to .bashrc
 alias vi='vim'
 set -o vi # vi key bindings in terminal
 export TERM=screen-256color # ensures colors/themes in vim
+source /etc/bash_completion.d/git # git autocompletion with tab
 ```
 
 Vundle would not work until I ran the `git config` command below. W/o it, git was adding ^M when cloning and it broke everything.
