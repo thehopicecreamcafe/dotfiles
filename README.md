@@ -12,7 +12,7 @@ yum install vim
 And add these lines to .bashrc
 
 ```
-# add to bashrc
+# add to bashrc (bash_profile for mac)
 alias vi='vim'
 set -o vi # vi key bindings in terminal
 export TERM=screen-256color # ensures colors/themes in vim
@@ -28,6 +28,10 @@ if [ "$color_prompt" = yes ]; then
 else
   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ '
 fi
+
+# history lives here: ~/.bash_history
+export HISTSIZE=10000000
+export HISTFILESIZE=1000000
 ```
 
 Vundle would not work until I ran the `git config` command below. W/o it, git was adding ^M when cloning and it broke everything.
