@@ -81,3 +81,7 @@ set undoreload=10000
 
 " should allow you to undo after saving, changing buffers and changing back
 :set hidden
+
+" make MRU CtrlP defaut mode
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd = 'CtrlPMRU'
