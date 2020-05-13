@@ -70,6 +70,10 @@ let g:ctrlp_max_files=0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 set autochdir
 
+" 1r - open the first file in the current window, and remaining opened as hidden buffers.
+" find files using ctrlp then select with ctrlz then ctrlo opens them
+let g:ctrlp_open_multiple_files = '1r'
+
 " for ctrl-p smart tabs from : https://github.com/DavidEGx/ctrlp-smarttabs
 let g:ctrlp_extensions = ['smarttabs']
 
@@ -78,6 +82,12 @@ set undofile
 set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
+
+set cursorline
+hi cursorline cterm=bold term=bold guibg=yellow guifg=white
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+highlight CursorLine guibg=#303000 ctermbg=234
 
 " should allow you to undo after saving, changing buffers and changing back
 :set hidden
