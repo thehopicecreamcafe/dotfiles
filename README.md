@@ -32,6 +32,18 @@ fi
 # history lives here: ~/.bash_history
 export HISTSIZE=10000000
 export HISTFILESIZE=1000000
+
+alias cl='clear'
+alias gco='git checkout'
+alias gd='git diff'
+alias gs='git status'
+alias gps='git push'
+alias gpl='git pull'
+alias gs='git status'
+alias gl='git log'
+alias ga='git add'
+alias gc='git commit'
+alias gcm='git commit -m'
 ```
 
 Vundle would not work until I ran the `git config` command below. W/o it, git was adding ^M when cloning and it broke everything.
